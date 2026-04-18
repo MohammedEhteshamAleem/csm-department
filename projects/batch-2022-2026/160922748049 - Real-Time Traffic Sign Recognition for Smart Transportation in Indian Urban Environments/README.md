@@ -4,10 +4,20 @@
 > Lords Institute of Engineering and Technology (UGC Autonomous), Hyderabad
 > Academic Year 2025–2026
 
-[![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python\&logoColor=white)](https://python.org)
-[![YOLO](https://img.shields.io/badge/YOLO-ObjectDetection-red)](https://ultralytics.com)
-[![OpenCV](https://img.shields.io/badge/OpenCV-ComputerVision-green)](https://opencv.org)
-[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
+![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python\&logoColor=white)
+![YOLO](https://img.shields.io/badge/YOLOv8-ObjectDetection-red)
+![OpenCV](https://img.shields.io/badge/OpenCV-ComputerVision-green)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
+
+---
+
+## 🌟 Key Highlights
+
+* 🚦 Real-time traffic sign detection using AI
+* 🧠 Deep learning-based recognition (YOLO)
+* 🇮🇳 Designed for Indian urban traffic conditions
+* ⚡ Fast and efficient processing
+* 📊 Scalable for smart transportation systems
 
 ---
 
@@ -19,21 +29,24 @@ The goal is to improve **road safety**, assist **drivers**, and support **intell
 
 ---
 
-## 🧠 About
+## 🎯 Problem Statement
 
-Traditional traffic systems rely heavily on human interpretation, which can lead to:
+Traditional traffic systems rely heavily on human interpretation, which leads to:
 
 * ❌ Missed traffic signs due to distractions
 * ❌ Human error in fast-moving traffic
 * ❌ Lack of real-time automated decision-making
 
-This project solves these issues using **AI-powered detection models**.
+---
 
-### 🔍 Key Idea:
+## 💡 Solution
 
-* Capture real-time input (camera/video)
-* Detect traffic signs using **YOLO**
-* Classify and display results instantly
+This project introduces an **AI-powered automated traffic recognition system**:
+
+* 🎥 Captures real-time input (camera/video)
+* 🧠 Detects traffic signs using YOLO
+* 📍 Draws bounding boxes with labels
+* ⚡ Displays results instantly with confidence scores
 
 ---
 
@@ -49,13 +62,13 @@ This project solves these issues using **AI-powered detection models**.
 
 ## ✨ Features
 
-| Feature                    | Description                                 |
-| -------------------------- | ------------------------------------------- |
-| 🎥 Real-Time Detection     | Detects traffic signs from live camera feed |
-| 🧠 AI-Based Recognition    | Uses deep learning models for high accuracy |
-| 🚦 Multiple Sign Detection | Recognizes different types of traffic signs |
-| ⚡ Fast Processing          | Optimized for real-time performance         |
-| 📊 Scalable System         | Can be extended for smart city applications |
+| Feature                  | Description                                 |
+| ------------------------ | ------------------------------------------- |
+| 🎥 Real-Time Detection   | Detects traffic signs from live camera feed |
+| 🧠 AI-Based Recognition  | Uses deep learning models for high accuracy |
+| 🚦 Multi-Class Detection | Recognizes multiple traffic signs           |
+| ⚡ Fast Processing        | Optimized for real-time performance         |
+| 📊 Scalable System       | Extendable for smart city applications      |
 
 ---
 
@@ -65,7 +78,7 @@ This project solves these issues using **AI-powered detection models**.
 | --------------- | ------------------------- |
 | Programming     | Python                    |
 | Computer Vision | OpenCV                    |
-| Deep Learning   | YOLO (You Only Look Once) |
+| Deep Learning   | YOLOv8                    |
 | Libraries       | NumPy, Pandas             |
 | Platform        | Jupyter Notebook / Python |
 
@@ -78,52 +91,96 @@ Input (Camera/Image)
         ↓
 Preprocessing (Resize, Normalize)
         ↓
-YOLO Model (Detection)
+YOLOv8 Model (Detection)
         ↓
-Classification of Traffic Signs
+Traffic Sign Classification
         ↓
-Output Display (Bounding Boxes + Labels)
+Output (Bounding Boxes + Labels)
 ```
 
 ---
 
-## ⚡ How It Works
+## ⚙️ Installation & Setup
 
-1. Capture video/image input
-2. Preprocess the input
-3. Apply trained YOLO model
-4. Detect and classify traffic signs
-5. Display output with labels and confidence
+```bash
+# Clone the repository
+git clone https://github.com/your-username/your-repo-name.git
+
+# Navigate to project directory
+cd your-repo-name
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the project
+python main.py
+```
+
+> ⚠️ Replace `your-username/your-repo-name` and `main.py` with your actual details
 
 ---
 
-## 🚀 Future Enhancements
+## 📁 Project Structure
 
-* Integration with self-driving systems
-* Mobile application deployment
-* Higher accuracy using advanced models
-* Real-time alerts for drivers
+```
+project-root/
+│
+├── data/               # Dataset files
+├── models/             # Trained YOLO model
+├── src/                # Source code
+├── outputs/            # Results / predictions
+├── requirements.txt    # Dependencies
+├── main.py             # Main execution file
+└── README.md
+```
 
 ---
 
-## 📄 License
+## 📊 Results
 
-This project is licensed under the **MIT License**.
+* ✅ Successful real-time traffic sign detection
+* 🎯 Good accuracy in recognizing traffic signs
+* ⚡ Fast inference suitable for live applications
+
+---
+
+## 📚 Dataset
+
+The model is trained on traffic sign datasets suitable for Indian road conditions:
+
+* Includes multiple traffic sign categories
+* Covers different lighting and weather conditions
+* Used for both training and evaluation of the YOLO model
+
+---
+
+## 🚀 Future Scope
+
+* Integration with Advanced Driver Assistance Systems (ADAS)
+* Deployment on edge devices (Raspberry Pi, Jetson Nano)
+* Real-time traffic violation detection
+* Integration with smart city infrastructure
+
+---
+
+## 🙌 Acknowledgment
+
+We thank our faculty and institution for their guidance and support throughout this project.
 
 ---
 
 ## 📌 Conclusion
 
-This project demonstrates how **AI and computer vision** can be used to enhance **traffic management and road safety** in Indian cities. It provides a strong foundation for building smarter transportation systems.
+This project demonstrates how **AI and computer vision** can enhance **traffic management and road safety** in Indian cities and serves as a foundation for intelligent transportation systems.
 
 ---
 
 <div align="center">
 
+### 🚀 Built with Passion by Team
+
 **Real-Time Traffic Recognition System**
 Lords Institute of Engineering and Technology, Hyderabad
 B.E. CSE (AIML) — 2025–2026
-
-*Built with ❤️ by Team*
 
 </div>
